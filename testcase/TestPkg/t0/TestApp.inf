@@ -1,0 +1,38 @@
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = TestApp 
+  FILE_GUID                      = 6987936E-ED34-44db-AE97-1FA5E4ED2117
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = ValidationFun0ApiEntry
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32 X64 IPF EBC
+#
+
+[Sources]  
+  TestApp.c 
+  fun0.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  testcase/TestPkg/t0/TestApp.dec
+
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiLib
+  DebugLib
+  UnitTestLib
+
+[Protocols]
+
+[FeaturePcd]
+
+[Pcd.common]
+  
+[Guids]
+
+[BuildOptions]
+  #MSFT:*_*_*_CC_FLAGS = /wd4804 /GL-

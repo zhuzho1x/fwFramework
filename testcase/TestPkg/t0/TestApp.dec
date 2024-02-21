@@ -1,0 +1,21 @@
+[Defines]
+  DEC_ SPECIFICATION            = 0x00010006
+  PACKAGE_NAME                  = TestApp
+  PACKAGE_GUID                  = F24BD0E2-F5E9-8550-1F67-EAE59D35F357
+  PACKAGE_VERSION               = 0.1
+
+[Includes]
+
+[Libraryclasses]
+
+[Protocols]
+
+[Ppis]
+
+[Guids]
+
+[PcdsFeatureFlag]
+
+[PcdsFixedAtBuild]
+
+[PcdsFixedAtBuild, PcdsPatchableInModule]
